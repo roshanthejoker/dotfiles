@@ -1,0 +1,582 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3143,
+	"last_window_id": 2,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 768.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 97.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 497.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/thejoker/dotfiles/.config/polybar/config",
+				"/home/thejoker/dotfiles/.config/i3/config",
+				"/home/thejoker/my_dotiles/polybar/conf",
+				"/home/thejoker/.config/polybar/launch.sh",
+				"/home/thejoker/.config/polybar/pavolume.sh",
+				"/home/thejoker/.i3/config",
+				"/home/thejoker/my_dotiles/i3/config",
+				"/home/thejoker/.config/ranger/scope.sh",
+				"/home/thejoker/.config/compton.conf",
+				"/home/thejoker/AndroidStudioProjects/tMDB/.git/COMMIT_EDITMSG",
+				"/home/thejoker/.Xresources",
+				"/home/thejoker/.mozilla/firefox/cbt11lmk.default/chrome/userChrome.css",
+				"/home/thejoker/.conf/compton.conf",
+				"/home/thejoker/.bash_profile"
+			],
+			"find":
+			{
+				"height": 25.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"\n[",
+					"ram",
+					"date",
+					"font = ",
+					"3",
+					"reference",
+					"font-0",
+					"font",
+					"feh",
+					"wallpaper",
+					"manjar",
+					"f",
+					"powermenu",
+					"foreground",
+					"powermenu",
+					"date",
+					"bar",
+					"show",
+					"bar",
+					"drun",
+					"dmenu"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 25.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1366.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": ";=====================================================\n; Multiple polybars to get this style\n;=====================================================\n\n\n;=====================================================\n; Colors used later, change here to change colors\n; in a modular way\n;=====================================================\n[colors]\n\n; Note: #aarrggbb, omit for solid alpha #rrggbb\n\nmain-bar-transparent-background = #00000000\nmain-bar-background             = #262626\n;=====================================================\n\n;=====================================================\n; i3 colors and settings\n;=====================================================\n[i3_settings]\nfocused_background   = #39393A\nunfocused_background = #262626\nunfocused_alert      = #F4511E\n\npadding = 1\n;=====================================================\n\n;=====================================================\n; Fonts \n;=====================================================\n[fonts]\nfont-0 = FontAwesome:pixelsize=13;4\nfont-1 = Hack:pixelsize=10;3\nfont-2 = Unifont:fontformat=truetype:size=8:antialias=false;0\n;=====================================================\n\n;=====================================================\n; Main bar\n;=====================================================\n[bar/main]\nwidth  = 100%\nheight = 32\nradius = 1.0\nfixed-center = false\n\nbackground = ${colors.main-bar-background}\n\nborder-size  = 0\nborder-color = #00000000\n\nmodule-margin-left  = 0\nmodule-margin-right = 2\n\nfont-0 = ${fonts.font-0}\nfont-1 = ${fonts.font-1}\nfont-2 = ${fonts.font-2}\n\nenable-ipc = true\n\nmodules-left   = i3\nmodules-center = \nmodules-right  = wlan eth volume xbacklight battery date\n\n;wm-restack = i3\n;override-redirect = true\n\ntray-position    = right\ntray-padding     = 0 \ntray-background  = ${colors.main-bar-background}\n\nbottom = true\n;=====================================================\n\n\n;=====================================================\n; Module i3\n;=====================================================\n[module/i3]\ntype = internal/i3\nformat = <label-state> <label-mode>\nindex-sort = true\nwrapping-scroll = false\nstrip-wsnumbers = true\n\n;Only show workspaces on the same output as the bar\n;pin-workspaces = true\nlabel-mode = \" %mode% \"\nlabel-mode-padding    = 0\nlabel-mode-background = ${i3_settings.unfocused_background}\n\n; focused = Active workspace on focused monitor\nlabel-focused\t\t\t\t\t   = %name%\nlabel-focused-padding    = ${i3_settings.padding}\nlabel-focused-background = ${i3_settings.focused_background}\n\n; unfocused = Inactive workspace on any monitor\nlabel-unfocused\t\t\t\t\t\t = %name%\nlabel-unfocused-padding    = ${i3_settings.padding}\nlabel-unfocused-background = ${i3_settings.unfocused_background}\n\n; visible = Active workspace on unfocused monitor\nlabel-visible\t\t\t\t\t\t = %name%\nlabel-visible-padding    = ${self.label-focused-padding}\nlabel-visible-background = ${self.label-focused-background}\n\n; urgent = Workspace with urgency hint set\nlabel-urgent\t\t\t\t\t  = %name%\nlabel-urgent-background = ${i3_settings.unfocused_alert}\nlabel-urgent-padding    = ${i3_settings.padding}\n;=====================================================\n\n\n;=====================================================\n; Module date and time\n;=====================================================\n[module/date]\ntype = internal/date\ninterval = 5\n\n; Format for date\ndate = \" %Y/%m/%d\"\n\n; Format for time\ntime = %H:%M\n\nformat-prefix\t\t\t\t\t\t = \" \"\nformat-prefix-background = ${colors.main-bar-background}\n\nlabel\t\t\t\t\t\t = \"%date% %time%\"\nlabel-background = ${colors.main-bar-background}\n;=====================================================\n\n\n;=====================================================\n; Module battery:\n; Shows information about the battery\n;=====================================================\n[module/battery]\ntype = internal/battery\n\n; Use the following command to list batteries and adapters\n; $ ls -l /sys/class/power_supply\nbattery = BAT0\nadapter = ADP0\n\n\n; Useful in case the battery never reports 100% charge\nfull-at = 98\n\n; Time format (see \"man date\")\ntime-format = %H:%M\n\n; Format when battery is charging\nformat-charging\t\t\t\t\t\t = <animation-charging><label-charging>\nlabel-charging\t\t\t\t\t\t = \" %percentage%% %time% \"\nformat-charging-background = ${colors.main-bar-background}\nlabel-charging-background  = ${colors.main-bar-background}\n\n; Format when battery is discharging\nformat-discharging\t\t\t\t\t\t= <ramp-capacity><label-discharging>\nlabel-discharging\t\t\t\t\t\t\t= \" %percentage%% %time% \"\nformat-discharging-background = ${colors.main-bar-background}\nlabel-discharging-background  = ${colors.main-bar-background}\n\n; Format when battery is fully charged\nformat-full\t\t\t\t\t\t = <ramp-capacity><label-full>\nlabel-full\t\t\t\t\t\t = \" Full \"\nformat-full-background = ${colors.main-bar-background}\nlabel-full-background  = ${colors.main-bar-background}\n\nramp-capacity-0  = \" \"\nramp-capacity-1  = \" \"\nramp-capacity-2  = \" \"\nramp-capacity-3  = \" \"\nramp-capacity-background = ${colors.main-bar-background}\n\nanimation-charging-0 = \" \"\nanimation-charging-1 = \" \"\nanimation-charging-2 = \" \"\nanimation-charging-3 = \" \"\nanimation-charging-framerate = 500\nanimation-charging-background = ${colors.main-bar-background}\n;=====================================================\n\n\n;=====================================================\n; Module xbacklight:\n; Shows information about the defined output's\n; backlight level\n;=====================================================\n[module/xbacklight]\ntype = internal/xbacklight\nenable-scroll = true\n\nformat = <ramp><label> \n\n; format label (if <label> is present)\nlabel            = \" %percentage%% \"\nlabel-background = ${colors.main-bar-background}\n\n; format ramp (if <ramp> is present)\nramp-0 = \" \" \nramp-background = ${colors.main-bar-background}\n;=====================================================\n\n\n;=====================================================\n; Module volume\n;=====================================================\n[module/volume]\ntype = internal/volume\n\nformat-volume = <ramp-volume><label-volume> \nlabel-volume  = \" %percentage%% \"\nlabel-volume-background = ${colors.main-bar-background}\n\nformat-muted\t\t\t\t          = <label-muted>\nformat-muted-prefix\t\t\t\t      = \"  \"\nformat-muted-prefix-background  = ${colors.main-bar-background}\n\nlabel-muted\t\t\t\t\t   = Muted\nlabel-muted-background = ${colors.main-bar-background} \n\nramp-volume-0 = \" \"\nramp-volume-1 = \" \"\nramp-volume-2 = \" \"\nramp-volume-background = ${colors.main-bar-background}\n;=====================================================\n\n\n;=====================================================\n; Module wlan\n;=====================================================\n[module/wlan]\ntype      = internal/network\ninterface = wlo1\ninterval  = 3.0\n\n; Don't show it if disconnected\nformat-disconnected = \n\n; When connected\nformat-connected           = <ramp-signal><label-connected>\nlabel-connected            = \" %local_ip% \"\nlabel-connected-background = ${colors.main-bar-background}\n\nramp-signal-0 = \" \"\nramp-signal-background = ${colors.main-bar-background}\n;=====================================================\n\n\n;=====================================================\n; Module ethernet\n;=====================================================\n[module/eth]\ntype = internal/network\ninterface = eno1\ninterval = 3.0\n\n; Don't show it if disconnected\nformat-disconnected =\n\nformat-connected-prefix-background = ${colors.main-bar-background}\nformat-connected-prefix\t\t\t\t\t\t = \" \"\n\nlabel-connected-background = ${colors.main-bar-background}\nlabel-connected\t\t\t\t\t   = \" %local_ip% \"\n\n;=====================================================\n\n\n;=====================================================\n; Settings\n;=====================================================\n[settings]\nscreenchange-reload = true\n;=====================================================\n\n\n; vim:ft=dosini",
+					"file": "/home/thejoker/.config/polybar/config",
+					"file_size": 7878,
+					"file_write_time": 131541025991208160,
+					"settings":
+					{
+						"buffer_size": 7846,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/thejoker/.config/rofi/config",
+					"settings":
+					{
+						"buffer_size": 69,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/thejoker/.config/rofi/sidestyle.rasi",
+					"settings":
+					{
+						"buffer_size": 4211,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/thejoker/temp_config_polybar",
+					"settings":
+					{
+						"buffer_size": 8068,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/thejoker/dotfiles/polybar/conf",
+					"settings":
+					{
+						"buffer_size": 1275,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 97.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 497.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/thejoker/.config/rofi/my_theme.theme",
+				"/home/thejoker/.config/rofi/sidestyle.rasi",
+				"/home/thejoker/.i3/config",
+				"/home/thejoker/.config/polybar/launch.sh",
+				"/home/thejoker/dotfiles/polybar/conf",
+				"/home/thejoker/my_dotiles/polybar/conf",
+				"/home/thejoker/dotfiles/.config/polybar/config",
+				"/home/thejoker/dotfiles/.config/i3/config",
+				"/home/thejoker/.config/polybar/pavolume.sh",
+				"/home/thejoker/my_dotiles/i3/config",
+				"/home/thejoker/.config/ranger/scope.sh",
+				"/home/thejoker/.config/compton.conf",
+				"/home/thejoker/AndroidStudioProjects/tMDB/.git/COMMIT_EDITMSG",
+				"/home/thejoker/.Xresources",
+				"/home/thejoker/.mozilla/firefox/cbt11lmk.default/chrome/userChrome.css",
+				"/home/thejoker/.conf/compton.conf",
+				"/home/thejoker/.bash_profile"
+			],
+			"find":
+			{
+				"height": 25.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"sidestyle",
+					"true",
+					"fonts",
+					"\n[",
+					"ram",
+					"date",
+					"font = ",
+					"3",
+					"reference",
+					"font-0",
+					"font",
+					"feh",
+					"wallpaper",
+					"manjar",
+					"f",
+					"powermenu",
+					"foreground",
+					"powermenu",
+					"date",
+					"bar",
+					"show",
+					"bar",
+					"drun",
+					"dmenu"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/thejoker/.config/polybar/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7846,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5716,
+										5716
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 3009.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/thejoker/.config/rofi/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 69,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										64,
+										64
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/thejoker/.config/rofi/sidestyle.rasi",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4211,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4211,
+										4211
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1657.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/thejoker/temp_config_polybar",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8068,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2181,
+										3052
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 374.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/thejoker/dotfiles/polybar/conf",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1275,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										12,
+										12
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 25.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,0,1366,736,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
